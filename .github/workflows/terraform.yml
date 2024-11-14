@@ -29,8 +29,8 @@ jobs:
         with:
           # aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           # aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-access-key-id: "ASIA4NVGMN52UI6LNKAE"
-          aws-secret-access-key: "2ePbnwPTYT8WA3ZUyMEFaLK5n9UY+F7Ihd7OGzZq"
+          aws-access-key-id: "ASIA4NVGMN52QF7J377I"
+          aws-secret-access-key: "zyZYr3NoFhDr63NJ70ouzZLdYcWQGR1h6uFcJ0qK"
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Install Infracost
