@@ -1,12 +1,10 @@
 name: Deploy EC2 with Terraform and Infracost
 
 on:
-  pull_request:
-    branches:
-      - main
   push:
     branches:
-      - main
+      - main  # Trigger on push to the main branch
+  workflow_dispatch: 
 
 jobs:
   terraform:
@@ -14,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      AWS_REGION: us-west-2  # Specify your AWS region
-      TF_VAR_environment: production  # Example Terraform variable
+      AWS_REGION: us-east-1  
+      TF_VAR_environment: dev  
 
     steps:
       - name: Checkout code
