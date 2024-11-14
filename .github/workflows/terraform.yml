@@ -1,6 +1,6 @@
 name: Deploy EC2 with Terraform and Infracost
 
-on:
+on: 
   push:
     branches:
       - main  # Trigger on push to the main branch
